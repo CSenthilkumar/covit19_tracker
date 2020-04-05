@@ -6,6 +6,8 @@ import { FatalityComponent } from './fatality/fatality.component';
 
 const routes: Routes = [
 
+  { path:"", redirectTo: "/corona", pathMatch: 'full' },
+
   { path:"corona",component:CoronaComponent },
   { path:"fatality",component:FatalityComponent } 
   
