@@ -1,0 +1,61 @@
+<form>
+<p> Fatality Dashboard</p> <hr>
+<div class="radio" align="center">    
+    <input type="radio" name="gender" value="Gender" (click)="setradio('gend')" [(ngModel)] = "gend">  
+    <label class="form-radio-label"> Gender  </label>
+  &nbsp;&nbsp;&nbsp;&nbsp; 
+    <input type="radio" name="age" value="Age" (click)="setradio('age')" [(ngModel)] = "age">  
+    <label class="form-radio-label"> Age  </label> 
+    &nbsp;&nbsp;&nbsp;&nbsp; 
+    <input type="radio" name="comorbidities" value="Comorbidities" (click)="setradio('como')" [(ngModel)] = "como">  
+    <label class="form-radio-label"> Comorbidities </label> 
+</div>  
+
+<div *ngIf="isSelected('gend')">
+    <h3>Fatality List By Gender </h3>
+    <table class="table " > 
+        <tr align="center" >
+            <th> Gender</th>
+            <th> DeathRateConfirmedCases</th>
+            <th> DeathRateAllCases</th>
+        </tr>
+        <tr align="center" *ngFor="let data of genderList" >
+            <td> {{data.Sex}} </td>
+            <td> {{data.DeathRateConfirmedCases}} </td>
+            <td> {{data.DeathRateAllCases}} </td>
+        </tr>
+
+    </table>
+    
+</div>
+<div *ngIf="isSelected('age')"> 
+    <h3>Fatality List By Age </h3>
+    <table class="table " > 
+        <tr align="center" >
+            <th> Age</th>
+            <th> DeathRateConfirmedCases</th>
+            <th> DeathRateAllCases</th>
+        </tr>
+        <tr align="center" *ngFor="let data of fatalityList" >
+            <td> {{data.Age}} </td>
+            <td> {{data.DeathRateConfirmedCases}} </td>
+            <td> {{data.DeathRateAllCases}} </td>
+        </tr>
+    </table>
+</div>
+<div *ngIf="isSelected('como')">
+    <h3>Fatality List By Comorbidities </h3>
+    <table class="table " > 
+        <tr align="center" >
+            <th> PreExistingCondition</th>
+            <th> DeathRateConfirmedCases</th>
+            <th> DeathRateAllCases</th>
+        </tr>
+        <tr *ngFor="let data of comoList" >
+            <td> {{data.PreExistingCondition}} </td>
+            <td> {{data.DeathRateConfirmedCases}} </td>
+            <td> {{data.DeathRateAllCases}} </td>
+        </tr>
+    </table>
+</div>
+</form>

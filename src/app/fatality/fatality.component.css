@@ -1,0 +1,49 @@
+div{
+    padding-top: 10px;
+    padding-right: 180px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+}
+
+h3 {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    color: saddlebrown;
+}
+p {
+    padding-top: 10px;
+    padding-right: 180px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    color: lightseagreen;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+form {
+    background-color:seashell;
+}
+
+th{
+    background-color: lightskyblue;
+    font-weight: bold;
+}
+
+th:hover {
+    background-color:rgb(8, 181, 250);
+}
+td:hover {
+    background-color:rgb(252, 227, 209);
+}
+
+tr:hover {
+    background-color:rgb(252, 227, 209);
+}
+
+.radio {
+    color:navy;
+    font-family: sans-serif;
+}
+ 
