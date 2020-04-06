@@ -8,7 +8,6 @@ import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { CoronaComponent } from './corona/corona.component';
 import { FatalityComponent } from './fatality/fatality.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
-import { ApplicationStateService } from './application-state.service';
 
 @NgModule({
   declarations: [
@@ -24,7 +23,7 @@ import { ApplicationStateService } from './application-state.service';
     HttpClientModule
   ],
   providers: [
-    ApplicationStateService
+
   ],
   bootstrap: [AppComponent]
 })
