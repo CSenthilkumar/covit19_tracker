@@ -1,21 +1,32 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~bootstrap/dist/css/bootstrap.css";
 
-.split {
-    position: fixed;
-    top: 0;
-    overflow-x: hidden;
-    padding-top: 0px;
-  }
-  
-  .left {
-    left: 0;
-    height: 100%;
-    width: 5%;
-  }
-  
-  .right {
-    right: 0;
-    height: 100%;
-    width: 95%;
-  }
+body{        
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+
+.fixed-header, .fixed-footer{
+  width: 100%;
+  position: fixed;        
+  background: rgb(109, 180, 125);
+  padding: 10px 0;
+  color: whitesmoke;
+}
+.fixed-header{
+  top: 0;
+}
+.fixed-footer{
+  bottom: 0;
+  text-align: center;
+}
+.container{
+  width: 80%;
+  margin: 0 auto; /* Center the DIV horizontally */
+}
+nav a{
+  color: #fff;
+  text-decoration: none;
+  padding: 7px 25px;
+  display: inline-block;
+}

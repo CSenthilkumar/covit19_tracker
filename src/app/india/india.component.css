@@ -1,0 +1,132 @@
+
+.padding {
+    padding: 30px;
+}
+.info {
+    padding: 5px;
+    color: rgba(2, 90, 74, 0.884);
+    background-color: rgb(190, 243, 177);
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.tbl {
+    color: rgba(2, 90, 74, 0.884);
+}
+
+/* Container for flexboxes */
+section {
+    display: -webkit-flex;
+    display: flex;
+}
+.state {
+    -webkit-flex: 2;
+    -ms-flex: 2;
+    flex: 2;
+    background: whitesmoke;
+    padding: 10px;
+}
+
+/* Style the content */
+.district {
+    -webkit-flex: 2;
+    -ms-flex: 2;
+    flex: 2;
+    background-color:white;
+    padding: 10px;
+  }
+
+.txt{
+    color: rgba(2, 90, 74, 0.884);
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+
+.header  {
+    color: rgb(7, 53, 13);
+    font-size: 30px;
+    font-weight: bold;
+    align-items: center;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+th{
+    background-color: rgb(109, 180, 125);
+    font-weight: bold;
+    color: whitesmoke;
+    cursor: pointer;
+}
+.pointer {
+    cursor: pointer;
+}
+
+.fixed-header, .fixed-footer{
+    width: 100%;
+    position: fixed;        
+    background: rgb(109, 180, 125);
+    padding: 10px 0;
+    color: whitesmoke;
+}
+.fixed-header{
+    top: 0;
+}
+.fixed-footer{
+    bottom: 0;
+}
+.container{
+    width: 80%;
+    margin: 0 auto; /* Center the DIV horizontally */
+}
+nav a{
+    color: #fff;
+    text-decoration: none;
+    padding: 7px 25px;
+    display: inline-block;
+}
+
+.card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 7px; /* 5px rounded corners */
+}
+  
+  /* On mouse-over, add a deeper shadow */
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(238, 144, 144, 0.2);
+}
+
+.case{
+    background-color: rgb(252, 210, 193);
+    color: red;
+    font-weight: bold;
+}
+
+.stdt{
+    background-color: whitesmoke;
+    color: rgb(4, 65, 9);
+    font-weight: bold;
+}
+
+.active{
+    background-color: rgb(215, 220, 252);
+    color: rgb(16, 45, 209);
+    font-weight: bold;
+}
+
+.death{
+    background-color: rgb(231, 230, 230);
+    color: rgb(107, 103, 103);
+    font-weight: bold;
+}
+
+.rec{
+    background-color: rgb(194, 240, 194);
+    color: rgb(2, 112, 2);
+    font-weight: bold;
+}
+
+.update{
+    color: rgb(112, 146, 112);
+    font-weight: bold;
+}

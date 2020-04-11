@@ -7,14 +7,14 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { CoronaComponent } from './corona/corona.component';
 import { FatalityComponent } from './fatality/fatality.component';
-import { SidebarComponent } from './sidebar/sidebar.component';
+import { IndiaComponent } from './india/india.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CoronaComponent,
     FatalityComponent,
-    SidebarComponent
+    IndiaComponent
   ],
   imports: [
     BrowserModule,

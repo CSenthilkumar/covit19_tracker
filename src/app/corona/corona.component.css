@@ -1,44 +1,24 @@
-div{
-    padding-top: 10px;
-    padding-right: 180px;
-    padding-bottom: 10px;
-    padding-left: 30px;
-}
 
 h3 {
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .selected:hover {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: bold;
-    font-size: 18x;
-    color: darkblue;
-}
-
-.select {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 18px;
-    color: darkblue; 
+    color: rgb(240, 122, 122);
 }
 
 a {
-    color: blue;
+    color: rgb(255, 0, 13);
     font-size:12px;
-    font-weight: bold;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 p {
-    padding-top: 10px;
-    padding-right: 180px;
-    padding-bottom: 10px;
-    padding-left: 30px;
-    color: rgba(3, 15, 187, 0.884);
-    font-size: 20px;
+    color: rgb(187, 30, 30);
+    font-size: 30px;
     font-weight: bold;
     text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 form {
@@ -84,11 +64,6 @@ th{
     font-weight: bold;
 }
 
-.radio {
-    color:navy;
-    font-family: sans-serif;
-}
-
 .pointer {
     cursor: pointer;
 }
@@ -99,4 +74,28 @@ th:hover {
 
 .input-group .fa-search{
     display: table-cell;
-  }
+}
+
+.fixed-header, .fixed-footer{
+    width: 100%;
+    position: fixed;        
+    background: rgb(109, 180, 125);
+    padding: 10px 0;
+    color: whitesmoke;
+}
+.fixed-header{
+    top: 0;
+}
+.fixed-footer{
+    bottom: 0;
+}
+.container{
+    width: 80%;
+    margin: 0 auto; /* Center the DIV horizontally */
+}
+nav a{
+    color: #fff;
+    text-decoration: none;
+    padding: 7px 25px;
+    display: inline-block;
+}
