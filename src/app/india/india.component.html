@@ -6,11 +6,11 @@
         <div class="card-body case">
             <h4 class="card-title">Confirmed</h4>
             <p class="card-text">
-                {{statewise[0].confirmed}}
+                {{statewise[0].confirmed| number}}
              </p>
         </div>
         <div class="card-footer text-muted">
-            <a class="update"> Updated on {{statewise[0].lastupdatedtime}} </a>
+            <a class="update"> Updated on {{statewise[0].lastupdatedtime |date:'mediumTime':'undefined':'en-US' }} </a>
         </div>
     </div>
 
@@ -18,11 +18,11 @@
         <div class="card-body active">
             <h4 class="card-title">Active</h4>
             <p class="card-text">
-                {{statewise[0].active}}
+                {{statewise[0].active| number}}
             </p>
         </div>
     <div class="card-footer text-muted">
-        <a class="update"> Updated on {{statewise[0].lastupdatedtime}} </a>
+        <a class="update"> Updated on {{statewise[0].lastupdatedtime |date:'mediumTime':'undefined':'en-US' }} </a>
     </div>
     </div>
 
@@ -30,11 +30,11 @@
         <div class="card-body rec"> 
             <h5 class="card-title">Recovered</h5>
             <p class="card-text">
-                {{statewise[0].recovered}}
+                {{statewise[0].recovered| number}}
             </p>
         </div> 
         <div class="card-footer text-muted">
-            <a class="update"> Updated on {{statewise[0].lastupdatedtime}} </a>
+            <a class="update"> Updated on {{statewise[0].lastupdatedtime |date:'mediumTime':'undefined':'en-US' }} </a>
         </div> 
     </div>
 
@@ -42,11 +42,11 @@
         <div class="card-body death"> 
           <h4 class="card-title">Deceased</h4>
           <p class="card-text">
-              {{statewise[0].deaths}}
+              {{statewise[0].deaths |number}}
           </p>
         </div>
         <div class="card-footer text-muted">
-            <a class="update"> Updated on {{statewise[0].lastupdatedtime}} </a>
+            <a class="update"> Updated on {{statewise[0].lastupdatedtime |date:'mediumTime':'undefined':'en-US' }} </a>
         </div>
     </div>
 
@@ -66,13 +66,13 @@
                 <th (click)="onSort('recovered')"> Recoverd </th>
                 <th (click)="onSort('deaths')"> Deceased </th>
             </tr>
-            <tr *ngFor="let data of statewise; let i=index;" (click)="onDistrict(data.state);" data-toggle="tooltip" title="Last Updated as {{statewise[i].lastupdatedtime}}">
+            <tr *ngFor="let data of statewise; let i=index;" (click)="onDistrict(data.state);" data-toggle="tooltip" title="Last Updated as {{statewise[i].lastupdatedtime|date:'mediumTime':'undefined':'en-US' }}">
 
                 <td class="pointer stdt" > {{statewise[i].state}} </td>
-                <td class="pointer case" > {{statewise[i].confirmed}} </td>
-                <td class="pointer active" > {{statewise[i].active}} </td>
-                <td class="pointer rec" > {{statewise[i].recovered}} </td>
-                <td class="pointer death" > {{statewise[i].deaths}} </td>            
+                <td class="pointer case" > {{statewise[i].confirmed| number}} </td>
+                <td class="pointer active" > {{statewise[i].active| number}} </td>
+                <td class="pointer rec" > {{statewise[i].recovered| number}} </td>
+                <td class="pointer death" > {{statewise[i].deaths| number}} </td>            
             </tr>
             
         </table>
@@ -87,7 +87,7 @@
             <tr align="center" *ngFor="let data of selectedDistList" >
                 <td class="stdt" > {{data.state}} </td>
                 <td class="stdt" > {{data.district}} </td>
-                <td class="case"> {{data.count}} </td>
+                <td class="case"> {{data.count| number}} </td>
             
             </tr>
         </table>
