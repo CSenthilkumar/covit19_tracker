@@ -66,7 +66,6 @@
                 <th (click)="onSort('recovered')"> Recoverd </th>
                 <th (click)="onSort('deaths')"> Deceased </th>
             </tr>
-
             <tr *ngFor="let data of statewise; let i=index;" (click)="onDistrict(data.state);" data-toggle="tooltip" title="Last Updated as {{statewise[i].lastupdatedtime|date:'mediumTime':'undefined':'en-US' }}">
 
                 <td class="pointer stdt" > {{statewise[i].state}} </td>
